@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+
+</head>
+<body>
+    <h1>Hello JavaScript!</h1>
+<!--    <script src="code.js">-->
+    <script>
+        console.log("Hello Code ^_^");
+        console.log(this);
+        /*
+        * window === this (в браузере)
+        *
+        * Размеры viewport:
+        * innerHeight = 100vh
+        * innerWidth = 100vw
+        * */
+
+        // Ввод данных (String || null)
+        let name = "Igor";//prompt("Как твоё имя?");
+
+        let names = ["Gocha", "Yasha", "Murat"];
+        names[20] = name;
+
+        // Подтверждение (Boolean)
+        let flag = false; //confirm("Тебя зовут Геннадий?");
+        console.log(flag);
+        // console.log(flag ? "Привет, крокодил!" : `Привет ${name}`);
+
+        // Уведомление
+        // alert(flag ? "Привет, крокодил!" : `Привет ${name}`);
+
+        const words = [
+            "камень",
+            "трюфель",
+            "акваланг",
+            "клиент",
+            "перфоратор",
+            "итератор",
+            "кот",
+            "радиус",
+            "детонатор",
+            "хворост",
+            "снег",
+            "сакура",
+            "поляна",
+            "сыр",
+            "байт",
+            "матрица"
+        ];
+        words.sort((a,b) => Math.random() - 0.5);
+        let word = words[Math.floor(Math.random() * words.length)];
+
+        let guess = "";
+        let lettersCnt = word.length;
+        while(lettersCnt--) {
+            guess += "-";
+        }
+
+        console.log(word, guess);
+    </script>
+</body>
+</html>
