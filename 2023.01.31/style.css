@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h2, p {
+    margin: 0;
+}
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.card {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 5px 0 #0008;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    border-radius: 10px;
+}
+h2 {
+    text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+button {
+    font-size: 24px;
+}

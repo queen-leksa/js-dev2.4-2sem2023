@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+#accordion h3 {
+    border: 1px solid;
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#accordion p {
+    margin: 0 0 10px;
+    padding: 0 10px;
+    border-radius: 0 0 8px 8px;
+    border-width: 1px;
+    border-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
