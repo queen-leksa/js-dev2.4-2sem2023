@@ -64,4 +64,33 @@ for (let i = 0; i < captions.length;) {
     el.onclick = openAcc;
 }
 
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundSize = "cover";
+document.body.style.minHeight = innerHeight + "px";
+document.body.style.backgroundImage = setGradient(6, "circle", "radial");
 
+let images = [
+    "https://images.unsplash.com/photo-1610878180933-123728745d22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuYWRhJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "https://images.squarespace-cdn.com/content/v1/5ca1ca66809d8e4c67c4eff5/1554107099415-6ZKSKVH666FFK127KFBQ/Test+logo+squarespace.png",
+    "https://media.istockphoto.com/id/1213516345/photo/crazy-looking-black-and-white-border-collie-dog-say-looking-intently-on-bright-yellow.jpg?s=612x612&w=0&k=20&c=ZwUftNZJvG91agYPwWPI286BeMCt5FUq2aMoxo8IjVE=",
+    "https://easydrawingguides.com/wp-content/uploads/2022/01/realistic-dog-step-by-step-drawing-tutorial-step-10.png",
+    "https://assets.reedpopcdn.com/Genshin-Impact-anime.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Genshin-Impact-anime.jpg",
+    "https://fiomio.ru/wp-content/uploads/2022/03/%D0%90%D0%BD%D0%B8%D0%BC%D1%8D-37.png"
+];
+
+let pic = images[getNumber(images.length)];
+console.log(pic);
+
+let ext = pic.split(".");
+
+document.body.style.backgroundPosition = "center";
+
+let grad = document.body.style.backgroundImage;
+console.log(grad);
+// document.body.style.backgroundImage = `url(${pic})`;
+// document.body.style.backgroundSize = ext.includes("png") ? "contain" : "cover";
+document.body.style.backgroundImage += `, url(${pic})`;
+document.body.style.backgroundSize += ext.includes("png") ? ",contain" : ",cover";
+
+document.body.style.backgroundImage = `url(${pic}), ${grad}`;
+document.body.style.backgroundSize = ext.includes("png") ? "contain, cover" : "cover";
