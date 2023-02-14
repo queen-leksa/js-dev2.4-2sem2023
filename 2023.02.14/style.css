@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h2 {
+    margin: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+.card {
+    height: 120px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
