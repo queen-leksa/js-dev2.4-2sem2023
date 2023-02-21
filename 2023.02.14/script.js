@@ -42,7 +42,6 @@ const createCard = (person, parent) => {
     date.style.color = color;
     card.append(caption, date);
     parent.appendChild(card);
-
     if (monthNames[new Date().getMonth()] === person.monthOfBirth) {
         card.style.backgroundColor = color;
         card.style.color = "#fff";

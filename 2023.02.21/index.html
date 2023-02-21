@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cdl {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+        .month {
+            display: grid;
+            grid-template-columns: repeat(7, auto);
+            gap: 10px;
+        }
+        .month h4 {
+            grid-column-end: span 7;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="cdl"></div>
+<script src="script.js"></script>
+</body>
+</html>
