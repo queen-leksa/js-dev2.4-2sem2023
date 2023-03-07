@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.square {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 8px;
+    user-select: none;
+    gap: 10px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    display: flex;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.popup {
+    position: absolute;
+    transform: translate(0, -100%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 #0006;
+    background-color: #fff;
+    opacity: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-self: stretch;
+}
+form {
+    background-color: silver;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+.card {
+    background: goldenrod;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 160px 1fr;
+}
+.card__pic {
+    background-color: silver;
+    background-size: cover;
+    background-position: center;
+}
+.card__content {
+    background-color: bisque;
+}

@@ -28,6 +28,5 @@ function setGradient(col, dir = "", type = "linear") {
             str += ",";
         }
     })
-    console.log(str);
     return str;
 }
